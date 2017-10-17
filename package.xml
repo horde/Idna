@@ -28,7 +28,7 @@
    <dir name="doc">
     <dir name="Horde">
      <dir name="Idna">
-      <file name="UPGRADING" role="doc" />
+      <file name="UPGRADING.rst" role="doc" />
      </dir> <!-- /doc/Horde/Idna -->
     </dir> <!-- /doc/Horde -->
    </dir> <!-- /doc -->
@@ -105,7 +105,7 @@
  </dependencies>
  <phprelease>
   <filelist>
-   <install as="UPGRADING" name="doc/Horde/Idna/UPGRADING" />
+   <install as="UPGRADING.rst" name="doc/Horde/Idna/UPGRADING.rst" />
    <install as="Horde/Idna.php" name="lib/Horde/Idna.php" />
    <install as="Horde/Idna/Exception.php" name="lib/Horde/Idna/Exception.php" />
    <install as="Horde/Idna/Punycode.php" name="lib/Horde/Idna/Punycode.php" />
