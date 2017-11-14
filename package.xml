@@ -67,7 +67,6 @@
       <file name="AllTests.php" role="test" />
       <file name="bootstrap.php" role="test" />
       <file name="IdnaTest.php" role="test" />
-      <file name="phpunit.xml" role="test" />
      </dir> <!-- /test/Horde/Idna -->
     </dir> <!-- /test/Horde -->
    </dir> <!-- /test -->
@@ -121,8 +120,7 @@
    <install as="Horde/Idna/AllTests.php" name="test/Horde/Idna/AllTests.php" />
    <install as="Horde/Idna/bootstrap.php" name="test/Horde/Idna/bootstrap.php" />
    <install as="Horde/Idna/IdnaTest.php" name="test/Horde/Idna/IdnaTest.php" />
-   <install as="Horde/Idna/phpunit.xml" name="test/Horde/Idna/phpunit.xml" />
-  </filelist>
+   </filelist>
  </phprelease>
  <changelog>
   <release>
