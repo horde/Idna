@@ -2,7 +2,7 @@
 id: Idna
 name: Idna
 full: IDNA normalization library
-description: >
+description: >-
   Normalized access to various backends providing IDNA (Internationalized Domain
   Names in Applications) support.
 list: dev
