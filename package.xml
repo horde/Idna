@@ -3,14 +3,14 @@
  <name>Horde_Idna</name>
  <channel>pear.horde.org</channel>
  <summary>IDNA normalization library</summary>
- <description>Normalized access to various backends providing IDNA (Internationalized Domain Names in Applications) support.</description>
+ <description>A library that wraps various backends providing IDNA (Internationalized Domain Names in Applications) support.</description>
  <lead>
   <name>Michael Slusarz</name>
   <user>slusarz</user>
   <email>slusarz@horde.org</email>
   <active>no</active>
  </lead>
- <date>2017-11-14</date>
+ <date>2019-11-03</date>
  <version>
   <release>1.1.2</release>
   <api>1.1.0</api>
@@ -237,7 +237,7 @@
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2017-10-20</date>
+   <date>2019-11-03</date>
    <license uri="http://www.horde.org/licenses/bsd">BSD-2-Clause</license>
    <notes>
 * [mjr] PHP 7.4 compatibility fixes (Remi Collet &lt;remi@famillecollet.com&gt;, PR #1).
