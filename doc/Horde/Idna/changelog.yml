@@ -1,4 +1,15 @@
 ---
+1.1.3:
+  api: 1.1.0
+  state:
+    release: stable
+    api: stable
+  date: 2019-11-03
+  license:
+    identifier: BSD-2-Clause
+    uri: http://www.horde.org/licenses/bsd
+  notes: |+
+    
 1.1.2:
   api: 1.1.0
   state:
