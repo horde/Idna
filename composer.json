@@ -31,9 +31,6 @@
     "autoload": {
         "psr-0": {
             "Horde_Idna": "lib/"
-        },
-        "psr-4": {
-            "Horde\\Idna\\": "src/"
         }
     }
 }
