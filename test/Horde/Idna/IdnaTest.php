@@ -1,5 +1,10 @@
 <?php
-class IdnaTest extends \PHPUnit_Framework_TestCase
+
+namespace Horde\Idna;
+use PHPUnit\Framework\TestCase;
+use \Horde_Idna;
+
+class IdnaTest extends TestCase
 {
     /**
      * @dataProvider domainNamesProvider
