@@ -39,7 +39,7 @@ class Horde_Idna
             return idn_to_ascii($data);
 
         case 'INTL_UTS46':
-            $result = idn_to_ascii($data, 0, INTL_IDNA_VARIANT_UTS46, $info);
+            $result = idn_to_ascii(is_null($data) ? "" : $data, 0, INTL_IDNA_VARIANT_UTS46, $info);
             self::_checkForError($info);
             return $result;
 

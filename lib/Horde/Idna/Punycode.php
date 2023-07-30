@@ -77,7 +77,7 @@ class Horde_Idna_Punycode
      */
     public function encode($input)
     {
-        $parts = explode('.', $input);
+        $parts = explode('.', is_null($input) ? "" : $input);
 
         foreach ($parts as &$part) {
             $part = $this->_encodePart($part);
@@ -137,13 +137,13 @@ class Horde_Idna_Punycode
                             break;
                         }
 
-                        $code = $t + (($q - $t) % (static::BASE - $t));
+                        $code = $t + (intval($q - $t) % (static::BASE - $t));
                         $output .= static::$_encodeTable[$code];
 
                         $q = ($q - $t) / (static::BASE - $t);
                     }
 
-                    $output .= static::$_encodeTable[$q];
+                    $output .= static::$_encodeTable[intval($q)];
                     $bias = $this->_adapt($delta, $h + 1, ($h === $b));
                     $delta = 0;
                     ++$h;
