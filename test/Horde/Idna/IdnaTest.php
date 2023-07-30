@@ -1,5 +1,5 @@
 <?php
-class IdnaTest extends \PHPUnit_Framework_TestCase
+class IdnaTest extends Horde_Test_Case 
 {
     /**
      * @dataProvider domainNamesProvider
