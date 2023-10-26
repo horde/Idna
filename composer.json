@@ -14,22 +14,16 @@
     "version": "1.1.2",
     "time": "2017-11-11",
     "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
     ],
     "require": {
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2"
+        "horde/exception": "^2",
+        "horde/util": "^2"
     },
     "suggest": {
         "ext-intl": "*"
     },
     "replace": {
-        "pear-pear.horde.org/Horde_Idna": "1.*",
-        "pear-horde/Horde_Idna": "1.*"
     },
     "autoload": {
         "psr-0": {
