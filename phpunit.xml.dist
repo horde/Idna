@@ -1,10 +1,18 @@
 <?xml version="1.0"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="test/Horde/Idna/bootstrap.php" colors="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         bootstrap="test/Horde/Idna/bootstrap.php"
+         colors="true"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/13.0/phpunit.xsd">
   <coverage>
+    <report>
+      <text outputFile="php://stdout" showOnlySummary="false"/>
+    </report>
+  </coverage>
+  <source>
     <include>
       <directory suffix=".php">lib</directory>
     </include>
-  </coverage>
+  </source>
   <testsuites>
     <testsuite name="horde/Idna">
       <directory>test</directory>

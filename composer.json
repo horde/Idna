@@ -35,7 +35,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Horde\\Idna\\Test\\": "test/"
+            "Horde\\Idna\\": "test/Horde/Idna/"
         }
     },
     "config": {

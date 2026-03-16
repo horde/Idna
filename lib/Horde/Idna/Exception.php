@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2014-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2014-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (BSD). If you
  * did not receive this file, see http://www.horde.org/licenses/bsd.
@@ -20,5 +21,4 @@
  * @license   http://www.horde.org/licenses/bsd BSD
  * @package   Idna
  */
-class Horde_Idna_Exception extends Horde_Exception
-{}
+class Horde_Idna_Exception extends Horde_Exception {}

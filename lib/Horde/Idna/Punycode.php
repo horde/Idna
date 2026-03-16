@@ -1,7 +1,8 @@
 <?php
+
 /**
- * Copyright 2014 TrueServer B.V.
- * Copyright 2015-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2014-2026 TrueServer B.V.
+ * Copyright 2015-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (BSD). If you
  * did not receive this file, see http://www.horde.org/licenses/bsd.
@@ -33,40 +34,40 @@ class Horde_Idna_Punycode
     /**
      * Bootstring parameter values.
      */
-    const BASE         = 36;
-    const TMIN         = 1;
-    const TMAX         = 26;
-    const SKEW         = 38;
-    const DAMP         = 700;
-    const INITIAL_BIAS = 72;
-    const INITIAL_N    = 128;
-    const PREFIX       = 'xn--';
-    const DELIMITER    = '-';
+    public const BASE         = 36;
+    public const TMIN         = 1;
+    public const TMAX         = 26;
+    public const SKEW         = 38;
+    public const DAMP         = 700;
+    public const INITIAL_BIAS = 72;
+    public const INITIAL_N    = 128;
+    public const PREFIX       = 'xn--';
+    public const DELIMITER    = '-';
 
     /**
      * Encode table.
      *
      * @param array
      */
-    protected static $_encodeTable = array(
+    protected static $_encodeTable = [
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
         'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
         'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-    );
+    ];
 
     /**
      * Decode table.
      *
      * @param array
      */
-    protected static $_decodeTable = array(
+    protected static $_decodeTable = [
         'a' =>  0, 'b' =>  1, 'c' =>  2, 'd' =>  3, 'e' =>  4, 'f' =>  5,
         'g' =>  6, 'h' =>  7, 'i' =>  8, 'j' =>  9, 'k' => 10, 'l' => 11,
         'm' => 12, 'n' => 13, 'o' => 14, 'p' => 15, 'q' => 16, 'r' => 17,
         's' => 18, 't' => 19, 'u' => 20, 'v' => 21, 'w' => 22, 'x' => 23,
         'y' => 24, 'z' => 25, '0' => 26, '1' => 27, '2' => 28, '3' => 29,
-        '4' => 30, '5' => 31, '6' => 32, '7' => 33, '8' => 34, '9' => 35
-    );
+        '4' => 30, '5' => 31, '6' => 32, '7' => 33, '8' => 34, '9' => 35,
+    ];
 
     /**
      * Encode a domain to its Punycode version.
@@ -226,9 +227,9 @@ class Horde_Idna_Punycode
             $n = $n + (int) ($i / $outputLength);
             $i = $i % ($outputLength);
 
-            $output = Horde_String::substr($output, 0, $i, 'UTF-8') .
-                $this->_codePointToChar($n) .
-                Horde_String::substr($output, $i, $outputLength - 1, 'UTF-8');
+            $output = Horde_String::substr($output, 0, $i, 'UTF-8')
+                . $this->_codePointToChar($n)
+                . Horde_String::substr($output, $i, $outputLength - 1, 'UTF-8');
 
             ++$i;
         }
@@ -269,7 +270,7 @@ class Horde_Idna_Punycode
             ($firstTime)
                 ? $delta / static::DAMP
                 : $delta / 2
-            );
+        );
         $delta += (int) ($delta / $numPoints);
 
         $k = 0;
@@ -292,11 +293,11 @@ class Horde_Idna_Punycode
      */
     protected function _codePoints($input)
     {
-        $codePoints = array(
-            'all'      => array(),
-            'basic'    => array(),
-            'nonBasic' => array()
-        );
+        $codePoints = [
+            'all'      => [],
+            'basic'    => [],
+            'nonBasic' => [],
+        ];
 
         $len = Horde_String::length($input, 'UTF-8');
         for ($i = 0; $i < $len; ++$i) {
