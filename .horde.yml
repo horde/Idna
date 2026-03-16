@@ -23,9 +23,9 @@ state:
 license:
   identifier: BSD-2-Clause
   uri: http://www.horde.org/licenses/bsd
-dependencies:
+Bdependencies:
   required:
-    php: ^7.4 || ^8
+    php: ^8
     composer:
       horde/exception: ^3
       horde/util: ^3
