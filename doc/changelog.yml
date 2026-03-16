@@ -9,7 +9,6 @@
     identifier: BSD-2-Clause
     uri: http://www.horde.org/licenses/bsd
   notes: |+
-    
 2.0.0alpha4:
   api: 2.0.0alpha1
   state:
@@ -54,6 +53,68 @@
   notes: |+
     [mjr] PHP 7.4 compatibility fixes (Remi Collet <remi@famillecollet.com>, PR #1).
     
+2.0.0-beta1:
+  api: 2.0.0-beta1
+  state:
+    release: beta
+    api: beta
+  date: 2026-03-16
+  license:
+    identifier: BSD-2-Clause
+    uri: https://spdx.org/licenses/BSD-2-Clause.html
+  notes: |-
+    fix: Ensure .gitignore file is never committed
+    fix(test): Repair unit test setup and improve coverage
+    Development mode for Idna-2.0.0alpha5
+    Released Idna-2.0.0alpha4
+    Upgrade workflows
+    Update metadata and workflows for PHP 8 support
+    Add CI job for satis repo update
+    no errors, ci.yml added and bootstrap.php adapted
+    no errors
+    no errors left
+    Development mode for Idna-2.0.0alpha5
+    Released Idna-2.0.0alpha3
+    Development mode for Idna-2.0.0alpha4
+    Released Idna-2.0.0alpha2
+    Development mode for Idna-2.0.0alpha3
+    Released Idna-2.0.0alpha1
+    Components updated the package files.
+    Merge pull request #2 from ChristophWurst/fix/encode-null-horde
+    Fix encoding null with PHP8.1
+    Update supported PHP versions and configuration names.
+    [mjr] PHP 7.4 compatibility fixes (Remi Collet <remi@famillecollet.com>, PR #1).
+    Merge pull request #1 from remicollet/issue-php74
+    Fix Trying to access array offset on value of type null
+    Standardize descriptions.
+    Add chomp character.
+    Enable PHP 7.3 CI.
+    Update package definitions.
+    Fix getting exit code on PHP 7.2+.
+    Mark Chuck and Michael as inactive.
+    package.xml must not contain empty <notes> tags.
+    Create CHANGES for all components.
+    Regenerate package.xml from changelog.yml.
+    Build changelog.yml from existing changelog(s).
+    Update .horde.yml with extended information.
+    Update composer.json.
+    Enable 7.2 builds.
+    PEAR on 5.6 and 7.0 is fixed.
+    Update file list
+    Move phpunit configuration to base directory.
+    Indicate markup language.
+    Update references to COPYING files.
+    Use LICENSE consistently and move to base directory.
+    Stop flooding #horde channel.
+    Use https URLs.
+    Install all dependencies but PECL extensions.
+    Hopefully this finally fixes Travis builds now.
+    Always discover channel manually, due to Travis bug.
+    Fix Travis tests.
+    Add Travis configuration and .gitignore files.
+    Updated
+    Update de translation.
+    Development mode for Horde_Idna-1.1.2
 1.1.1:
   api: 1.1.0
   state:

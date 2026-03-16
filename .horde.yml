@@ -15,10 +15,10 @@ authors:
     active: false
     role: lead
 version:
-  release: 2.0.0alpha5
+  release: 2.0.0-beta1
   api: 2.0.0alpha1
 state:
-  release: alpha
+  release: beta
   api: alpha
 license:
   identifier: BSD-2-Clause
@@ -32,3 +32,4 @@ Bdependencies:
   optional:
     ext:
       intl: '*'
+vendor: horde

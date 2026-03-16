@@ -6,6 +6,7 @@ use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Horde_Idna;
 use Horde_Idna_Exception;
+use ValueError;
 
 /**
  * Test error handling in IDNA encoding/decoding
@@ -33,7 +34,7 @@ class ErrorHandlingTest extends TestCase
         // Empty string handling depends on backend
         if (extension_loaded('intl')) {
             // intl backend throws ValueError
-            $this->expectException(\ValueError::class);
+            $this->expectException(ValueError::class);
             $idna->encode('');
         } else {
             // Punycode backend may handle differently
