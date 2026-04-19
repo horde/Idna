@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         bootstrap="test/Horde/Idna/bootstrap.php"
+         bootstrap="vendor/autoload.php"
          colors="true"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/13.0/phpunit.xsd">
   <coverage>
@@ -11,6 +11,7 @@
   <source>
     <include>
       <directory suffix=".php">lib</directory>
+      <directory suffix=".php">src</directory>
     </include>
   </source>
   <testsuites>
