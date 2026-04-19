@@ -50,3 +50,7 @@ run-tests.log
 # PHPStan cache directory
 /.phpstan.cache/
 composer.lock
+
+# Added by horde-components QC --fix-qc-issues
+# PHPUnit Cache (other)
+/.phpunit.cache
