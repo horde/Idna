@@ -37,14 +37,14 @@ class Horde_Idna
     {
         switch ($backend = static::_getBackend()) {
             case 'INTL':
-                if ($data === null) {
-                    return false;
+                if ($data === null || $data === '') {
+                    return '';
                 }
                 return idn_to_ascii($data);
 
             case 'INTL_UTS46':
-                if ($data === null) {
-                    return false;
+                if ($data === null || $data === '') {
+                    return '';
                 }
                 $result = idn_to_ascii($data, 0, INTL_IDNA_VARIANT_UTS46, $info);
                 self::_checkForError($info);
