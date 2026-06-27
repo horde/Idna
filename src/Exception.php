@@ -18,6 +18,4 @@ namespace Horde\Idna;
 
 use Horde\Exception\HordeException;
 
-class Exception extends HordeException
-{
-}
+class Exception extends HordeException {}

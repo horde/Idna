@@ -8,8 +8,7 @@ description: >-
 list: dev
 type: library
 authors:
-  -
-    name: Michael Slusarz
+  - name: Michael Slusarz
     user: slusarz
     email: slusarz@horde.org
     active: false
@@ -33,3 +32,8 @@ Bdependencies:
     ext:
       intl: '*'
 vendor: horde
+keywords: null
+ci-platform:
+  '8.6': not resolvable
+ci-platform-flags:
+  needs_installer_plugin: false

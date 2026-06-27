@@ -24,8 +24,7 @@ class Idna
 {
     public function __construct(
         private readonly BackendInterface $backend,
-    ) {
-    }
+    ) {}
 
     public static function create(): self
     {
